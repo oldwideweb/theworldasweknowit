@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Google Sans Code", monospace;
+}
+
+.container-main p {
+    position: absolute;
+    color: rgb(49, 49, 49);
+}
+
+.container-main p.first {
+    left: 8vw;
+    top: 12vh;
+}
+
+.container-main p.second {
+    left: 48vw;
+    top: 28vh;
+}
+
+.container-main p.third {
+    right: 30vw;
+    bottom: 45vh;
+}
+
+.container-main p.last {
+    left: 43vw;
+    bottom: 7vh;
+}
+
+.last a {
+    text-decoration: none;
+    color: rgb(172, 171, 171);
+}
+
+.last:hover ~ .true-last {
+    opacity: 30%;
+}
+
+.last a:hover{
+    color: white;
+}
+
+.true-last
+{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -99;
+
+    background-image: url(img/rain.gif);
+    background-size: cover;
+}
